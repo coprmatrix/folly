@@ -1,0 +1,20 @@
+-------------------------------------------------------------------
+Fri Jul 26 12:32:05 UTC 2024 - cgoll@suse.com
+
+- Update to version 2024.07.22.00:
+  * simplify cache local/lifetime coordination in SingletonRelaxedCounter
+  * outline ThreadEntry::LocalLifetime
+  * Add onError interface to Expected type (#1104)
+  * Add BENCHMARK_DRAW_TEXT to folly benchmarks
+  * Fix implicit narrowing conversion in folly/concurrency/test/UnboundedQueueTest.cpp
+  * less indirection in StaticMeta::get
+  * Add #include <sys/types.h> for pid_t (#2258)
+  * remove outdated branch when StaticMeta creates ThreadEntry
+  * customization for folly::index_iterator (recreated)
+  * Revert D59811691: customization for folly::index_iterator
+- build for x86-v3 only right now
+
+-------------------------------------------------------------------
+Thu Jul 25 14:39:01 UTC 2024 - Christian Goll <cgoll@suse.com>
+
+- inital commit of folly v2024.07.22.00 
