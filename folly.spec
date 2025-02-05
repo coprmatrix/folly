@@ -59,12 +59,12 @@
 
 Name:           folly
 Version:        2025.01.27.00
-Release:        2%{?autorelease}
+Release:        3%{?autorelease}
 Summary:        Facebook Open-source Library
 # FIXME: Select a correct license from https://github.com/openSUSE/spec-cleaner#spdx-licenses
 License:        Apache-2.0
 URL:            https://github.com/facebook/folly
-Source:         %{name}-%{version}.tar.xz
+Source:         %{name}-%{version}.tar.gz
 BuildRequires:  boost-devel
 BuildRequires:  cmake
 #BuildRequires:  double-conversion-devel
