@@ -59,7 +59,7 @@
 
 Name:           folly
 Version:        2025.01.27.00
-Release:        3%{?autorelease}
+Release:        4%{?autorelease}
 Summary:        Facebook Open-source Library
 # FIXME: Select a correct license from https://github.com/openSUSE/spec-cleaner#spdx-licenses
 License:        Apache-2.0
@@ -161,7 +161,7 @@ Requires:       cmake(FastFloat)
 Requires:       cmake(double-conversion)
 Requires:       cmake(fmt)
 Requires:       cmake(gflags)
-Requires:       cmake(glog)
+BuildRequires:  (cmake(glog) or pkgconfig(libglog))
 Requires:       (cmake(lz4) or pkgconfig(liblz4))
 Requires:       pkgconfig(bzip2)
 Requires:       pkgconfig(libdwarf)
